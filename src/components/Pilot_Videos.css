@@ -1,0 +1,10 @@
+.videos {
+    
+    align-self: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    position: relative;
+    align-content: center;
+    height: 4px;
+    width: 4px;
+}

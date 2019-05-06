@@ -1,0 +1,54 @@
+header {
+    display: flex;
+    background-color: skyblue;
+    box-align: left;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 2;
+    font-size: 20px;
+    
+}
+.home{
+    /* display: flex; */
+    float: right;
+    font-size: 30px;
+    font-family: sans-serif;
+    justify-items: right;
+    text-decoration-style: wavy;
+    padding-left: 400px
+}
+.pilots{
+    /* display: flex; */
+    float: right;
+    font-size: 30px;
+    font-family: sans-serif;
+    justify-items: right;
+    text-decoration-style: wavy;
+    padding-left: 50px
+}
+/* .nav{
+    display: flex;
+    background-color: skyblue;
+    box-align: left;
+    padding: 2px;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 2;
+    font-size: 20px;
+    margin: 5px;
+    
+} */
+
+@media(min-width: 500px)
+
+/* .logo, #main-nav {
+    background-image: url("../logo.png");
+    border-radius: 60px;
+    float: left;
+    background-color: white;
+}
+.logo {
+    height: 100px;
+    width: 100px; 
+    float: left;
+} */
