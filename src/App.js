@@ -37,7 +37,7 @@ class App extends Component {
         <Header />
       {/* <StripeCheckout token={this.onToken} stripeKey="pk_test_QbPg6qWGZHyNleXltFbwJRvp00uuYGPbfD" /> */}
       
-        <img className="image"/>
+        <img className="main-pic" />
         <div className="icons">Add icons</div>
         <Switch>
           

@@ -38,17 +38,13 @@ module.exports = {
 //     .then(products => {
 //         res.status(200).send(videos);
 //     })
-
-       
-       
-       
 //    },
    deleteVideo: (req, res, next) => {
     //    const db = req.params;
        console.log(req.params, 'please delete already')
        const db = req.app.get("db")
        console.log(db, "Delete")
-       db.delete_video(req.params.id).then ((videos) => res.status(200).send(videos)).catch(err => {
+       db.delete_video([req.params.id, req.session.user.id]).then ((videos) => res.status(200).send(videos)).catch(err => {
         //    console.log(err,"Is it hitting")
        })
    },

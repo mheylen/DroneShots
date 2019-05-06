@@ -87,6 +87,7 @@ class PilotCard extends Component {
       this.props.setUsers(res.data);
     });
     this.getOne();
+    this.signIn();
  
   }
   
@@ -150,7 +151,7 @@ class PilotCard extends Component {
 getOne () {
 console.log("Hit")
   axios.get('/api/pilotContent/').then(response => {
-    console.log(response.data.results)
+    console.log(response.data, "------------->")
     this.setState({
       videoList: response.data
     });

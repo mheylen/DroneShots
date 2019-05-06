@@ -82,7 +82,7 @@ export default class Pilot_Videos extends Component {
                 copy[0] === '{' ? 
                 <video className="videos" controls ><source src= {joinDatMoFo}  /> </video>
                 :
-                <img src={content.video} alt=""/>
+                <img src={content.videos} alt=""/>
                 }
                 
 
