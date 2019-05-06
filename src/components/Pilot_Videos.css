@@ -1,10 +1,12 @@
 .videos {
-    
-    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    position: relative;
-    align-content: center;
-    height: 4px;
-    width: 4px;
-}
+    align-items: center;
+    
+    width: 25%;
+    height:30%;
+    border: 5px;
+    margin: 15px;
+  }

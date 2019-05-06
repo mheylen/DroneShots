@@ -36,7 +36,8 @@ class App extends Component {
       <div className="App">
         <Header />
       {/* <StripeCheckout token={this.onToken} stripeKey="pk_test_QbPg6qWGZHyNleXltFbwJRvp00uuYGPbfD" /> */}
-        <div className="main-vid">Video Player</div>
+      
+        <img className="image"/>
         <div className="icons">Add icons</div>
         <Switch>
           

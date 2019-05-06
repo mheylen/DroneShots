@@ -11,6 +11,7 @@ require("dotenv").config();
 
 
 const { SERVER_PORT, CONNECTION_STRING, SESSION_SECRET } = process.env;
+app.use( express.static( `${__dirname}/../build` ) );
 app.use(express.json());
 
 app.use(
@@ -62,7 +63,6 @@ app.post('/api/stripe', function (req, res, next){
     })
 })
 
-app.use( express.static( `${__dirname}/../build` ) );
 // pilot logout
 
 app.post("/api/logout", (req, res) => {
