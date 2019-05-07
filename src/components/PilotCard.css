@@ -1,0 +1,60 @@
+.dropzone{
+display: flex;
+height: 150px;
+width: 250px;
+border: dotted grey;
+/* align-self: center */
+}
+
+li{
+    /* display: flex; */
+    block-size: 20px;
+    font-size: 20px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding-bottom: 25px
+}
+
+
+.button-1{
+    size: 25px;
+    color: red;
+    height: 25px;
+}
+.pilotView{
+    display: flex;
+    width: 50%;
+    height: 50%;
+    flex-direction: row;
+    align-self: center;
+    flex-wrap: wrap;
+    position: relative;
+    align-content: left;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .pilotView > h1{
+      display:flex;
+      font-size: 15px;
+      color: red;
+      flex-wrap: wrap;
+  }
+  .pilotView > p{
+      display:flex;
+      font-size: 15px;
+      color: red;
+  }
+  
+.myUploads{
+   margin-top: 150px;
+   
+}
+
+
+  .pilotView > video{
+    height: 150px;
+    width: 45%; 
+    /* padding: 10px; */
+    flex-wrap: wrap;
+  }

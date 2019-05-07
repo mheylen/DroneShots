@@ -6,7 +6,7 @@ import Pilot_Videos from "./Pilot_Videos";
 import Stats from "./Stats"
 import { Link } from 'react-router-dom'
 // import { setStore } from "../ducks/store"
-import "./header.css";
+import "./PilotCard.css";
 import Dropzone from "react-dropzone"
 const CLOUDINARY_UPLOAD_URL = "https://api.cloudinary.com/v1_1/de3supjrm/video/upload";
 
@@ -168,12 +168,12 @@ console.log("Hit")
     
     console.log(users)
     return (
-        <div>
+        <div >
           <nav>
             <ul>
               {!users ? (
                 <li>
-                  <input
+                  <input required 
                     placeholder="email"
                     name="email"
                     value={email}
@@ -181,7 +181,7 @@ console.log("Hit")
                       this.changeHandler(e.target.name, e.target.value)
                     }
                   />
-                  <input
+                  <input required 
                     placeholder="password"
                     type="password"
                     name="password"
@@ -191,8 +191,8 @@ console.log("Hit")
                     }
                   />
                   
-                  <button onClick={this.register}>Register</button>
-                  <button onClick={() => this.signIn()}>Sign In</button>
+                  <button id="button-1" onClick={this.register}>Register</button>
+                  <button id="button-2"onClick={() => this.signIn()}>Sign In</button>
                 </li>
               ) : (
                 <button onClick={this.logout}>Logout</button>
@@ -206,20 +206,11 @@ console.log("Hit")
                       <section>
                         <div {...getRootProps()}>
                           <input {...getInputProps()} />
-                          <button id="dropzone">Click or drop files here</button>
+                          <button className="dropzone">Drag or Click to Drop Files </button>
                         </div>
                       </section>
                     )}
                   </Dropzone>
-                    {/* <input placeholder="Upload Video"
-                     name="video"
-                     value={video}
-                     onChange={e =>
-                       this.changeHandler(e.target.name, e.target.value)
-                     }
-                  />  */}
-                  
-
                   <input
                       placeholder="title"
                       type="title"
@@ -247,6 +238,7 @@ console.log("Hit")
                       this.changeHandler(e.target.name, e.target.value)
                     }
                     />
+                    
                   <button onClick={this.upload}>Upload</button>
               
                 </li>

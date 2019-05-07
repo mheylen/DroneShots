@@ -1,63 +1,72 @@
 /* .outer changes the look of the webiste without being responsive. */
 .outer {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    align-items: center;
-    
-    width: 25%;
-    height:30%;
-    border: 5px;
-    margin: 15px;
-  }
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  position: relative;
+  align-items: center;
+  float: right;
+  width: 50%;
+  height:50%;
+  border: 5px;
+  margin: 0 auto;
 
-/* .main-vid{
-  display:flex;
-  background: peachpuff;
-  height: 500px;
 }
 
-.icons{
+  /* .videos{
+    display: flex;
+
+  } */
+
+
+
+/* .icons{
   display: flex;
-  background-color: cornflowerblue;
-  height: 250px;
-  padding-bottom: 20px
+  flex-direction: row;
+  background-color: brown;
+  justify-content: space-around;
+  position: relative;
+  align-items: center;
+  width: 1%;
+  height:1%;
+  border: 5px;
+  margin: 15px;
 } */
-    
 
-
-h3 {
+/* h3 {
   font-size: 20px;
   color: blue;
   margin-top: 5px;
-} 
+}  */
 
 .vidz {
   display: flex;
+  width: 100%;
+  flex-direction: row;
   align-self: center;
   flex-wrap: wrap;
   justify-content: space-evenly;
   position: relative;
-  align-content: center;
-  height: 75%;
-  width: 75%;
-   
-    
-    
-        /* box-shadow: 1px 3px 4px 0px gray; */
-        
-      }
+  align-content: left;
+  height: 10%;
+  margin-bottom: 15px;
+}
 
-      
+.href{
+  display: flex;
+  
+}
 
-      .buttonz {
-        display: flex;
-        align-items: center;
-        padding: 5px  
-        
-          
-          
+
+
+.buttonz {
+  display: flex;
+  padding: 5px;  
+  align-items: center;
+  align-self: center;
+  margin-bottom: 15px;
+  margin-top: 5px
       }
 
       @media(min-width: 500px) {
@@ -66,21 +75,34 @@ h3 {
           }
         }
 
-    @media(min-width: 500px) {
+    @media(max-width: 500px) {
         .outer{
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         position: relative;
         align-items: center;
-        float: right;
-        width: 50%;
-        height:50%;
+        width: 100%;
+        height:100%;
         border: 5px;
-        margin: 15px;}
-    }
-      
-      
-     
-      
-    
+        margin: 15px;
+      }
+      .buttonz {
+        display: flex;
+        padding: 5px;  
+        justify-content: center;
+        margin-bottom: 15px;
+        /* margin-top: 5px; */
+        text-decoration: none;
+
+      } 
+       
+      .PayDown{
+        display: flex;
+        padding: 5px;  
+        justify-content: center;
+        margin-bottom: 15px;
+        /* margin-top: 5px; */
+        text-decoration: none;
+      }
+  } 

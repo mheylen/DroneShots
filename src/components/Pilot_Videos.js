@@ -18,7 +18,7 @@ export default class Pilot_Videos extends Component {
     }
     componentDidMount() {
         this.getOne();
-        
+        this.updateVideo();
     }
     getOne() {
         axios.get("/api/pilotContent/").then(res => {
@@ -72,23 +72,24 @@ export default class Pilot_Videos extends Component {
             let joinDatMoFo = newVideo.join('')
             console.log(content, "Content Videos")
             return (
-                <div key={content.content_id}>
+                <div className="pilotView" key={content.content_id}>
+                <div className= "myUploads">My Uploads</div>
                 <h1>Title: {content.title}</h1>
                 <p>Description: {content.description}</p>
                 <p>Tags: {content.tag}</p>
-                <button onClick={() => this.deleteVideo(content.videos_id)} >Delete</button>
-                <Link to={`/edit/${content.videos_id}`}>Edit</Link>
                 {
-                copy[0] === '{' ? 
-                <video className="videos" controls ><source src= {joinDatMoFo}  /> </video>
-                :
-                <img src={content.videos} alt=""/>
+                  copy[0] === '{' ? 
+                  <video className="videos" controls ><source src= {joinDatMoFo}  /> </video>
+                  :
+                  <img src={content.videos} alt=""/>
                 }
+                <Link to={`/edit/${content.videos_id}`}>Edit</Link>
+                <button onClick={() => this.deleteVideo(content.videos_id)} >Delete</button>
                 
 
                 </div>
             )
         });
-        return <div className="dashboard">{contentDisplay}</div>
+        return <div>{contentDisplay}</div>
     }
 }

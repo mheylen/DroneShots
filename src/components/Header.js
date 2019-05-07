@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
 import { connect } from "react-redux";
 import "./header.css";
+import { NONAME } from "dns";
 
 
 class Header extends Component {
@@ -10,12 +11,12 @@ class Header extends Component {
     return (
       <header>
           <div className= "home">
-                < NavLink exact to="/" activeStyle={{ color: "red" }}>
+                < NavLink exact to="/" activeStyle={{ textDecoration: "none"}}>
                   Home
                 </NavLink>
                 </div>
           <div className="pilots">
-                <NavLink to="/pilot" activeStyle={{ color: "red" }}>
+                <NavLink to="/pilot" activeStyle={{ textDecoration:"none" }}>
                   Pilots 
                 </NavLink>
           </div>

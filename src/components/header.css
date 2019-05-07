@@ -1,30 +1,37 @@
 header {
-    display: flex;
-    background-color: skyblue;
-    box-align: left;
+    /* display: flex; */
+    justify-content: flex-start; 
+    background-color: black;
+    height: 70px;
+    box-align: right;
     font-size: 1rem;
-    font-weight: 400;
-    line-height: 2;
-    font-size: 20px;
+    font-weight: 40;
+     line-height: 2;
+   
     
 }
 .home{
-    /* display: flex; */
+    display: flex;
     float: right;
     font-size: 30px;
     font-family: sans-serif;
     justify-items: right;
-    text-decoration-style: wavy;
-    padding-left: 400px
+    text-decoration-style: none;
+    padding-right: 40px;
+    padding-top: 15px;
+    position: relative;
+    text-decoration: none
 }
 .pilots{
-    /* display: flex; */
+    display: flex;
     float: right;
     font-size: 30px;
     font-family: sans-serif;
     justify-items: right;
     text-decoration-style: wavy;
-    padding-left: 50px
+    padding-right: 60px;
+    padding-top: 15px;
+    text-decoration: none;
 }
 /* .nav{
     display: flex;
@@ -39,7 +46,42 @@ header {
     
 } */
 
-@media(min-width: 500px)
+@media(max-width: 500px){
+    header{
+        
+        position: fixed;
+        justify-content: space-around;
+        position: relative;
+        align-items: center;
+        width: 100vw;
+        height:2vh;
+        border: 5px;
+        padding-top: 50px;
+        text-decoration: none
+    }
+    
+    .home{
+        display: flex;
+        position: fixed;
+        font-size: 15px;
+        justify-items: center;
+        font-weight: 700;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        text-decoration: none;
+        
+    }
+    .pilots{
+        display:flex;
+        position: fixed;
+        font-size: 15px;
+        font-weight: 700;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        padding-left: 70px;
+        text-decoration: none;
+    }
+}
+
+
 
 /* .logo, #main-nav {
     background-image: url("../logo.png");

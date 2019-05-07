@@ -10,7 +10,8 @@ export default class Dashboard extends Component {
         super(props);
 
         this.state = {
-            content: []
+            content: [],
+            token: ""
         };
         this.getAllContent = this.getAllContent.bind(this);
         
@@ -27,7 +28,7 @@ export default class Dashboard extends Component {
     }
 
     render (){
-        const { content } = this.state;
+        const { content, token } = this.state;
         
         
         const contentDisplay = content.map(content => {
@@ -39,22 +40,22 @@ export default class Dashboard extends Component {
             
             
             return (
-                <div className="outer">
-                <div className= "videos" key={content.content_id}>
                 
-
+                <div className="outer">
+                <div>{content.email}</div>
+                <div className= "videos" key={content.content_id}>
                 {
                     copy[0] === '{' ? 
                     <video controls className="vidz"><source src= {joinDatMoFo}  /> </video>
                     :
                     <img src={content.video} />
                 }
-                < StripeCheckout token={this.onToken} stripeKey="pk_test_QbPg6qWGZHyNleXltFbwJRvp00uuYGPbfD" />
-                <a href={joinDatMoFo} download={content.video}  className = "buttonz" >Download<source src={joinDatMoFo}/>
-                </a>
-                
-                
                 </div>
+                <div className="PayDown">
+                     < StripeCheckout token={this.onToken} stripeKey="pk_test_QbPg6qWGZHyNleXltFbwJRvp00uuYGPbfD" />
+                    <a href={joinDatMoFo} download={content.video}  className = "buttonz" >Download<source src={joinDatMoFo}/>  
+                    </a>
+                    </div>
             </div>
         
         )
