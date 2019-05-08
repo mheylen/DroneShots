@@ -4,10 +4,9 @@ import { Switch, Route } from "react-router-dom";
 import PilotCard from "./components/PilotCard";
 import Dashboard from "./components/Dashboard";
 import editVideo from "./components/editVideo";
-import dollarIcon from "./dollar-icon.jpg";
-import mapIcon from "./map-icon.jpg";
-import droneIcon from "./drone-icon.jpg"
+
 import "./App.css";
+import "./index.css"
 import Axios from "axios";
 
 
@@ -40,18 +39,20 @@ class App extends Component {
         <Header />
       {/* <StripeCheckout token={this.onToken} stripeKey="pk_test_QbPg6qWGZHyNleXltFbwJRvp00uuYGPbfD" /> */}
       
-        
        
         <Switch>
           <ul>
             <li>  
-              <Route exact path="/" render={() => { return (<div className="main-vid">
+              <Route exact path="/" render={() => { return (<div>
           <video width="100%" height="100%" autoPlay loop muted>
           <source
           src="https://res.cloudinary.com/de3supjrm/video/upload/v1557201415/jnkvnjg2ivtb56im7vlh.mov"
           type="video/mp4"
           />
           </video>
+          <source src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/91792556893999.59c0c97e92374.jpg"
+          type="image" />
+          <div className="lingo">Make $$$ Capturing Video in No Fly Zone's (NFZ)</div>
                <Dashboard /> </div>)}}/></li>
             <li>
               <Route exact path="/pilot" render={() => { return ( <div>Pilot Information <PilotCard deleteVideo={this.deleteVideo} editVideo={this.editVideo} /></div>);}}/></li>

@@ -1,0 +1,27 @@
+.lingo{
+  display: flex;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+video{
+  /* visibility: hidden; */
+  /* backface-visibility: hidden; */
+}
+
+ul > li > div > image{
+  width: 1000px;
+  height: 1000px;
+}
+
+
+@media(max-width:500px){
+  ul > li > div > image{
+    background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/91792556893999.59c0c97e92374.jpg")
+  }
+}
+

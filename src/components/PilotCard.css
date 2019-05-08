@@ -1,10 +1,13 @@
-.dropzone{
+/* .dropzone{
 display: flex;
 height: 150px;
 width: 250px;
 border: dotted grey;
-/* align-self: center */
-}
+align-self: center;
+
+} */
+
+
 
 li{
     /* display: flex; */
@@ -18,7 +21,7 @@ li{
 
 .button-1{
     size: 25px;
-    color: red;
+    color: black;
     height: 25px;
 }
 .pilotView{
@@ -37,13 +40,13 @@ li{
   .pilotView > h1{
       display:flex;
       font-size: 15px;
-      color: red;
+      color: black;
       flex-wrap: wrap;
   }
   .pilotView > p{
       display:flex;
       font-size: 15px;
-      color: red;
+      color: black;
   }
   
 .myUploads{

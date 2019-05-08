@@ -1,37 +1,44 @@
 header {
-    /* display: flex; */
-    justify-content: flex-start; 
-    background-color: black;
+    display: flex;
+    justify-content: space-evenly; 
+    background-color: grey;
     height: 70px;
-    box-align: right;
+    /* box-align: right; */
     font-size: 1rem;
     font-weight: 40;
-     line-height: 2;
+     line-height: 1;
    
     
 }
-.home{
+.home a{
     display: flex;
-    float: right;
+    float: left;
     font-size: 30px;
     font-family: sans-serif;
-    justify-items: right;
+    /* justify-items: right; */
     text-decoration-style: none;
-    padding-right: 40px;
-    padding-top: 15px;
+    /* padding-right: 40px; */
+    padding-top: 20px;
     position: relative;
-    text-decoration: none
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: 900
 }
-.pilots{
+/* .home a{
+    color: red;
+} */
+
+.pilots a{
     display: flex;
     float: right;
     font-size: 30px;
     font-family: sans-serif;
-    justify-items: right;
-    text-decoration-style: wavy;
-    padding-right: 60px;
-    padding-top: 15px;
+    /* justify-items: right; */
+    /* padding-right: 60px; */
+    padding-top: 20px;
     text-decoration: none;
+    color: whitesmoke;
+    font-weight: 900
 }
 /* .nav{
     display: flex;
@@ -49,20 +56,30 @@ header {
 @media(max-width: 500px){
     header{
         
-        position: fixed;
-        justify-content: space-around;
+        /* position: fixed; */
+        /* justify-content: space-around;
         position: relative;
         align-items: center;
         width: 100vw;
         height:2vh;
         border: 5px;
         padding-top: 50px;
-        text-decoration: none
+        text-decoration: none; */
+
+        display: flex;
+        justify-content: space-evenly; 
+        background-color: grey;
+        height: 50px;
+        /* box-align: right; */
+        font-size: 1rem;
+        font-weight: 40;
+         line-height: 1;
+        
     }
     
-    .home{
+    .home a {
         display: flex;
-        position: fixed;
+        position: relative;
         font-size: 15px;
         justify-items: center;
         font-weight: 700;
@@ -70,9 +87,10 @@ header {
         text-decoration: none;
         
     }
-    .pilots{
+    .pilots a{
         display:flex;
-        position: fixed;
+        position: relative;
+        float: left;
         font-size: 15px;
         font-weight: 700;
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;

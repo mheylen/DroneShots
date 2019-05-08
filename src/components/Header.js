@@ -11,7 +11,7 @@ class Header extends Component {
     return (
       <header>
           <div className= "home">
-                < NavLink exact to="/" activeStyle={{ textDecoration: "none"}}>
+                < NavLink exact to="/" >
                   Home
                 </NavLink>
                 </div>
