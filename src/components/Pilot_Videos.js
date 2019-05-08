@@ -73,7 +73,7 @@ export default class Pilot_Videos extends Component {
             console.log(content, "Content Videos")
             return (
                 <div className="pilotView" key={content.content_id}>
-                <div className= "myUploads">My Uploads</div>
+                <div className= "myUploads"></div>
                 <h1>Title: {content.title}</h1>
                 <p>Description: {content.description}</p>
                 <p>Tags: {content.tag}</p>
